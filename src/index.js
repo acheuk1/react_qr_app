@@ -18,11 +18,15 @@ console.log(id);
     user: {
       key: id,
       //dynamically set these custom attributes using the deviceType and osName selectors from the npm package
+      email:'acheuk@launchdarkly.com',
       custom: {
         device: deviceType,
         operatingSystem: osName,
         type:"asdf"
       },
+      _meta: {
+        privateAttributes: ['email']
+      }
     },
   });
 
