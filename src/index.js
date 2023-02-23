@@ -10,7 +10,8 @@ import getUserId from "./util/getUserId";
 const CLIENTKEY = "63b64e43f3f26c136bf2b898";
 
 let id = getUserId();
-
+//identify which user is being used
+console.log(id);
 (async () => {
   const LDProvider = await asyncWithLDProvider({
     clientSideID: CLIENTKEY,
@@ -20,6 +21,7 @@ let id = getUserId();
       custom: {
         device: deviceType,
         operatingSystem: osName,
+        type:"asdf"
       },
     },
   });
