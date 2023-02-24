@@ -24,11 +24,12 @@ console.log(id);
         operatingSystem: osName,
         type:"asdf"
       },
-      _meta: {
-        privateAttributes: ['email']
-      }
+      privateAttributeNames: ['email']
     },
   });
+  console.log(LDProvider);
+
+
 
   ReactDOM.render(
     <LDProvider>
